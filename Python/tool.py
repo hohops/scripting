@@ -1,25 +1,10 @@
-s=open("test.txt","w") #looks for the file if not created it creates it
-s.write("this is a test\nWelcome to my page") #writes inside the file
-s.close()
-read_file=open("test.txt", "r").read() #cats the file
-# print(read_file)
+import os
+import winshell
+from datetime import datetime
 
+mod_time = os.stat('demo.txt').st_mtime
+print(datetime.fromtimestamp(mod_time))
 
-
-
-# ls1 = [1, 2, 3, 4]
-
-#for i in ls1:
-#  print(i)
-a = input("what is your parameter?")
-
-if a in read_file:
-    print("It's in here")
-
-else:
-    print("Not founded")
-
-
-# line = "I am Hoho"
-# conv_list = line.split(" ")
-# print(conv_list)
+recycleBin_items = list(winshell.recycle_bin())
+winshell.recycle_bin().empty(confirm=False,
+          show_progress=False, sound=True)
