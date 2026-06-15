@@ -19,7 +19,7 @@ cat <<'EOF' | sed 's/./\x1b[94m&\x1b[0m/g'
 
 EOF
 echo ""
-echo -e "								 ${UNDERLINE}Press 1 to start${NC}"
+echo -e "								 ${UNDERLINE}Press 1 to start!${NC}"
 echo ""
 echo ""
 echo -e "${UNDERLINE}${BLINK_WHITE}Press 1${NC}"
