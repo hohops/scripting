@@ -1,6 +1,12 @@
-def main():
-    print("Hello from python!")
+import os
+
+path = os.getcwd()
+
+dir = input("directory to change")
+cd = os.chdir(dir)
 
 
-if __name__ == "__main__":
-    main()
+
+print(path)
+print(cd)
+print(os.getcwd())
